@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Perpus</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>Pustaka Kahyangan</h1>
+        </div>
+        <ul class="data-list">
+            <li><a href="../modul 3/index.html">Beranda</a></li>
+            <a href="#"><li class="media">Media
+    
+                <ul class="list1">
+                    <a href="./audia.html"><li>Audio</li></a>
+                    <a href="./avideo.html"><li>Video</li></a>
+                </ul>
+            </li></a>
+    
+            <a href="#"><li class="form">Formulir
+    
+                <ul class="list2">
+                    <a href="formanggota.html"><li>Formulir Anggota</li></a>
+                    <a href="formperpus.html"><li>Formulir Perpustakaan</li></a>
+                </ul>
+            </li></a>
+            <a href="#"><li class="perpustakaan">Tautan Eksternal
+    
+              <ul class="list">
+                      <a href="./purpus.html"><li>Perpustakaan Nasional RI</li></a>
+                      <a href="./pyerpus.html"><li>Perpustakaan Umum Provinsi Sumatera Utara</li></a>
+                      <a href="./perpusmed.html"><li>Perpustakaan Umum Kota Medan</li></a>
+                      <a href="./perpususu.html"><li>Perpustakaan Universitas Sumatera Utara</li></a>
+              </ul> 
+          </li></a>
+            <a href="./kontak.html"><li>Kontak</li></a>
+            </ul>   
+        </div>
+    <br>
+    <html>
+        <title>Form Perpanjangan Peminjaman Buku</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+    
+            h2 {
+                color: black;
+            }
+    
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                margin: auto;
+            }
+    
+            div {
+                margin-bottom: 15px;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            input[type="text"],
+            input[type="date"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+    
+            input[type="submit"] {
+                background-color: #007BFF;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+    
+        </style>
+    </head>
+    <body>
+
+    <h2>Format Pemesanan Buku</h2><br>
+    <form action="proses_pemesanan.php" method="post">
+        <div>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="text" required>
+        </div>
+        
+        <div>
+            <label for="judul_buku">Judul Buku:</label>
+            <input type="text" id="judul_buku" name="judul_buku" required>
+        </div>
+
+        <div>
+            <label for="jumlah">Jumlah:</label>
+            <input type="text" id="jumlah" name="jumlah" min="1" required>
+        </div>
+
+        <div>
+            <label for="alamat">Alamat Pengiriman:</label>
+            <input type="text" name="alamat" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Pesan" name="pesan">
+        </div>
+    </form>
+</body>
+</html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: unset;
+}
+th, td {
+  background-color: #ccc;
+}
+  </style>
+  </head>
+  <body>
+  </style>
+  </head><br><br>
+  <h2>Tabel Beberapa Koleksi Buku</h2><br><br>
+  <table style="width:100%">
+    <tr>
+      <th>Judul Buku</th>
+      <th>Pengarang</th> 
+      <th>Penerbit</th>
+      <th>Tahun Terbit</th>
+      <th>Jumlah Halaman</th>
+    </tr>
+    <tr>
+      <td>The Alpha Girl`S Guide</td>
+      <td>Henry Manampiring</td>
+      <td>Kawah Media</td>
+      <td>2020</td>
+      <td>280 halaman</td>
+    </tr>
+    <tr>
+      <td>Hanya Saja Definisi Cinta Kita Berbeda</td>
+      <td>Febriawan Jauhari</td>
+      <td>Penerbit Sahim</td>
+      <td>2020</td>
+      <td>184 halaman</td>
+    </tr>
+    <tr>
+      <td>Selamat Menunaikan Ibadah Puisi</td>
+      <td>Joko Pinurbo</td>
+      <td>Gramedia Pustaka Utama</td>
+      <td>2017</td>
+      <td>204 halaman</td>
+    </tr>
+    <td>Jika Kita Tak Pernah Baik-baik Saja</td>
+    <td>Alvi Syahrin</td>
+    <td>Gagasmedia</td>
+    <td>2020</td>
+    <td>216 halaman</td>
+  </tr>
+    <td>Nanti Juga Sembuh Sendiri</td>
+    <td>Helobagas</td>
+    <td>Gradien Mediatama</td>
+    <td>2022</td>
+    <td>164 halaman</td>
+  </tr>
+  </table>
+  <br><br><br>
+  </body>
+  </html>
+
+  <style>
+    body { 
+        background-image: url("../Multimedia/paper4.jpg");
+        min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    }
+      </style>
