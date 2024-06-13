@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Anggota</title>
+</head>
+<body>
+     <div class="nav">
+        <div class="logo">
+            <h1>Pustaka Kahyangan</h1>
+        </div>
+        <ul class="data-list">
+            <li><a href="../modul 3/index.html">Beranda</a></li>
+            <a href="#"><li class="media">Media
+    
+                <ul class="list1">
+                    <a href="./audia.html"><li>Audio</li></a>
+                    <a href="./avideo.html"><li>Video</li></a>
+                </ul>
+            </li></a>
+    
+            <a href="#"><li class="form">Formulir
+    
+                <ul class="list2">
+                    <a href="formanggota.html"><li>Formulir Anggota</li></a>
+                    <a href="formperpus.html"><li>Formulir Perpustakaan</li></a>
+                </ul>
+            </li></a>
+            <a href="#"><li class="perpustakaan">Tautan Eksternal
+    
+              <ul class="list">
+                      <a href="./purpus.html"><li>Perpustakaan Nasional RI</li></a>
+                      <a href="./pyerpus.html"><li>Perpustakaan Umum Provinsi Sumatera Utara</li></a>
+                      <a href="./perpusmed.html"><li>Perpustakaan Umum Kota Medan</li></a>
+                      <a href="./perpususu.html"><li>Perpustakaan Universitas Sumatera Utara</li></a>
+              </ul> 
+          </li></a>
+            <a href="./kontak.html"><li>Kontak</li></a>
+            </ul>   
+        </div>
+    <br>
+    <html>
+        <title>Formulir Keanggotaan</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+    
+            h2 {
+                color: #333;
+            }
+    
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                margin: auto;
+            }
+    
+            div {
+                margin-bottom: 15px;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+    
+            input[type="text"],
+            input[type="date"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+    
+            input[type="submit"] {
+                background-color: #007BFF;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <h2>Formulir Keanggotaan</h2>
+        
+        <form action="proses_perpanjangan.php" method="post">
+            <div>
+                <label for="kode_buku">Nama:</label>
+                <input type="text" id="kode_buku" name="kode_buku" required>
+            </div>
+            
+            <div>
+                <label for="nama_peminjam">NIM:</label>
+                <input type="text" id="nama_peminjam" name="nama_peminjam" required>
+            </div>
+            
+            <div>
+                <label for="tanggal_pinjam">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required>
+            </div>
+    
+            <div>
+                <label for="tanggal_kembali">Tempat Lahir:</label>
+                <input type="text" id="tanggal_kembali" name="tanggal_kembali" required>
+            </div>
+
+            <div>
+                <label for="nama_peminjam">Jenis Kelamin:</label>
+                <input type="text" id="nama_peminjam" name="nama_peminjam" required>
+            </div>
+            
+            <div>
+                <label for="tanggal_pinjam">Alamat:</label>
+                <input type="text" id="tanggal_pinjam" name="tanggal_pinjam" required>
+            </div>
+            <div>
+                <label for="nama_peminjam">Nomor Ponsel:</label>
+                <input type="text" id="nama_peminjam" name="nama_peminjam" required>
+            </div>
+            
+            <div>
+                <label for="tanggal_pinjam">Email:</label>
+                <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" name="perpanjang">
+            </div>
+        </form>
+    </body>
+    </html>
+    <br><br>
+    <h2>Format Perpanjangan Peminjaman Buku</h2>
+    <br><br>
+    <form action="proses_perpanjangan.php" method="post">
+        <div>
+            <label for="kode_buku">Kode Buku:</label>
+            <input type="text" id="kode_buku" name="kode_buku" required>
+        </div>
+        
+        <div>
+            <label for="nama_peminjam">Nama Peminjam:</label>
+            <input type="text" id="nama_peminjam" name="nama_peminjam" required>
+        </div>
+        
+        <div>
+            <label for="tanggal_pinjam">Tanggal Pinjam:</label>
+            <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required>
+        </div>
+
+        <div>
+            <label for="tanggal_kembali">Tanggal Kembali:</label>
+            <input type="date" id="tanggal_kembali" name="tanggal_kembali" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Perpanjang" name="perpanjang">
+        </div>
+    </form>
+</body>
+</html>
+<html>
+<h3> Silakan Masuk</h3>
+<form>
+    <label for="fname">Nama:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">ID Anggota:</label><br>
+    <input type="text" id="lname" name="lname">
+    <input type="submit" value="Submit">
+  </form>
+  </html>
+<style>
+    body { 
+        background-image: url("../Multimedia/paper4.jpg");
+        min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    }
+      </style>

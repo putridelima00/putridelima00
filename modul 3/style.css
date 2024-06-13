@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.nav {
+    border: 1px #fff;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: bisque;
+}
+
+.nav a{
+    color: black;
+}
+
+.nav a:hover{
+    color: red;
+}
+
+.data-list {
+    margin-left: 30%;
+}
+
+.data-list li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.data-list a{
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.list1 {
+    display: none;
+    background-color: antiquewhite;
+    position: absolute;
+    padding-top: 7px;
+    padding-right: 20px;
+}
+
+.list1 li {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.media:hover .list1{
+    display: block;
+}
+
+.list1 li:hover{
+    color: red;
+}
+
+
+.list2 {
+    display: none;
+    background-color: beige;
+    position: absolute;
+    padding-top: 7px;
+    padding-right: 20px;
+}
+
+.list2 li {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.form:hover .list2{
+    display: block;
+}
+
+.list2 li:hover{
+    color: red;
+}
+
+
+.list {
+    display: none;
+    background-color: antiquewhite;
+    position: absolute;
+    padding-top: 7px;
+    padding-right: 20px;
+}
+
+.list li {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.perpustakaan:hover .list{
+    display: block;
+}
+
+.list li:hover{
+    color: red;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.book-exhibit {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.book-exhibit img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-exhibit h3 {
+    margin-left: 40px;
+    text-align: center;
+}
+.book-exhibit h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.book-exhibit p {
+    font-size: 1rem;
+    color: #555;
+}
